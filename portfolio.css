@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.main_title {
+  height: 200px;
+  width: 400px;
+  justify-content: center;
+}
+
+.header-name {
+  font-family: "ZCOOL KuaiLe", serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.main_title {
+    justify-content: center
+    font-family: "ZCOOL KuaiLe", serif;
+}
+
+header li {
+  float: left;
+  border: 2rem;
+  font-family: "ZCOOL KuaiLe", Courier, monospace;
+  margin-right: 10px;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0 20 px 0 20px;
+}
+
+.skills_list {
+  display: flex;
+  flex-direction: table-column;
+}
+
+html {
+  font: "Courier New", Courier, monospace;
+  font: 20px/1;
+  font-family: serif;
+}
+
+.nav_list {
+  display: flex;
+}
+
+header nav {
+  float: right;
+  display: block;
+  margin-top: 10px;
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  align-items: center;
+  color: purple;
+  justify-content: space-between;
+}
+
+a:hover {
+  color: black;
+}
+
+.container {
+  background-color: blanchedalmond;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  background-color: cornflowerblue;
+}
