@@ -4,10 +4,21 @@
   margin: 0;
   padding: 0;
 }
-.main_title {
-  height: 200px;
-  width: 400px;
-  justify-content: center;
+
+html {
+  font: "Courier New", Courier, monospace;
+  font: 20px/1;
+  font-family: serif;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  background-color: transparent;
+  padding: 10px;
+  position: absolute;
+  width: 100vw;
 }
 
 .header-name {
@@ -19,16 +30,48 @@ ul {
   padding: 0;
 }
 
-.main_title {
-    justify-content: center
-    font-family: "ZCOOL KuaiLe", serif;
+a {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+a:hover {
+  color: black;
+}
+
+.container {
+  background-color: blanchedalmond;
+}
+
+.Hero_image {
+  background-image: url(https://images.singletracks.com/blog/wp-content/uploads/2018/11/trail-9277-1170x780.jpg);
+  height: 75vh;
+  display: flex;
+  font-family: sans-serif;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Hero_image-title {
+  font: "ZCOOL KuaiLe", serif;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 header li {
   float: left;
-  border: 2rem;
+  color: white;
+  border: 3px solid white;
   font-family: "ZCOOL KuaiLe", Courier, monospace;
   margin-right: 10px;
+  padding: 3px;
   list-style-type: none;
   justify-content: space-between;
   padding: 0 20 px 0 20px;
@@ -37,12 +80,6 @@ header li {
 .skills_list {
   display: flex;
   flex-direction: table-column;
-}
-
-html {
-  font: "Courier New", Courier, monospace;
-  font: 20px/1;
-  font-family: serif;
 }
 
 .nav_list {
@@ -55,27 +92,33 @@ header nav {
   margin-top: 10px;
 }
 
-a {
+.hero_image-subtitle {
+  color: white;
+}
+
+.about {
   display: flex;
-  text-decoration: none;
-  list-style-type: none;
-  align-items: center;
-  color: purple;
-  justify-content: space-between;
-}
-
-a:hover {
-  color: black;
-}
-
-.container {
-  background-color: blanchedalmond;
-}
-
-header {
-  display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
   margin: 0;
-  background-color: cornflowerblue;
+  background-color: transparent;
+  height: 40vh;
+  width: 100vw;
+}
+.about_description {
+  width: 40vw;
+}
+
+.about_title {
+  font-weight: bold;
+  font-family: "ZCOOL KuaiLe", Courier;
+  margin: 0.5rem;
+  width: 100vw;
+}
+.skills_list_title {
+  width: 10vw;
+}
+.skills {
+  width: 40vw;
+  height: 50vh;
 }
