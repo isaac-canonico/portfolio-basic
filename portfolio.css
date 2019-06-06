@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,119 +7,211 @@
 }
 
 html {
-  font: "Courier New", Courier, monospace;
+  --dark: #392f5a;
+  --mid: #9dd9d2;
+  --light: #fff8f0;
+  --red: #ff8811;
+
+  font: sans-serif, Courier;
   font: 20px/1;
-  font-family: serif;
-}
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0;
-  background-color: transparent;
-  padding: 10px;
-  position: absolute;
-  width: 100vw;
+  margin: 2 auto;
 }
 
-.header-name {
-  font-family: "ZCOOL KuaiLe", serif;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
+body {
+  background-color: navajowhite;
 }
 
 a {
-  display: flex;
   text-decoration: none;
-  list-style-type: none;
-  align-items: center;
-  justify-content: space-between;
-  color: white;
 }
-
 a:hover {
   color: black;
 }
 
-.container {
-  background-color: blanchedalmond;
-}
-
-.Hero_image {
-  background-image: url(https://images.singletracks.com/blog/wp-content/uploads/2018/11/trail-9277-1170x780.jpg);
-  height: 75vh;
-  display: flex;
-  font-family: sans-serif;
-  color: white;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.Hero_image-title {
-  font: "ZCOOL KuaiLe", serif;
-  color: white;
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-header li {
-  float: left;
-  color: white;
-  border: 3px solid white;
-  font-family: "ZCOOL KuaiLe", Courier, monospace;
-  margin-right: 10px;
-  padding: 3px;
-  list-style-type: none;
-  justify-content: space-between;
-  padding: 0 20 px 0 20px;
-}
-
-.skills_list {
-  display: flex;
-  flex-direction: table-column;
-}
-
-.nav_list {
-  display: flex;
-}
-
-header nav {
-  float: right;
-  display: block;
-  margin-top: 10px;
-}
-
-.hero_image-subtitle {
-  color: white;
-}
-
-.about {
+.header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0;
-  background-color: transparent;
-  height: 40vh;
+  padding: 10px 16px;
   width: 100vw;
-}
-.about_description {
-  width: 40vw;
+  background-color: transparent;
 }
 
-.about_title {
+.header_name {
+  margin: 1rem;
+  margin-top: 0;
+  font-family: "ubuntu", sans-serif;
+  color: black;
   font-weight: bold;
-  font-family: "ZCOOL KuaiLe", Courier;
-  margin: 0.5rem;
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.header_subtitle {
+  color: #392f5a;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.Hero_image {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://placeimg.com/1000/800/nature);
+  position: relative;
+  text-align: center;
   width: 100vw;
+  color: white;
+  margin-bottom: 1rem;
 }
-.skills_list_title {
-  width: 10vw;
+.Hero_image-phrase {
+  text-align: center;
+  position: absolute;
+  border-style: ridge;
+  background: var(--dark);
+  padding: 0.5rem;
+  border: 3px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
+
+.header_image-phrase {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  color: var(--dark);
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 0;
+  width: 300px;
+  height: 50px;
+}
+
+.nav {
+  text-align: center;
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.nav_links {
+  list-style: none;
+  font-size: 1.25rem;
+  margin: 2px;
+}
+
+.nav_links-items {
+  display: inline-block;
+  font-size: 25px;
+  padding: 8px 8px;
+  align-items: center;
+  color: black;
+  background-color: var(--light);
+  border: 2px solid var(--dark);
+  border-radius: 3rem;
+}
+
+.about_description {
+  padding-bottom: 2 rem;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 25rem;
+  color: var(--dark);
+}
+.about_title {
+  padding-left: 10% auto;
+  max-width: 70rem;
+  margin-left: 15rem;
+  margin-top: 2rem;
+  margin-right: 15rem;
+  border-bottom: 3px solid red;
+  font-family: "ubuntu", sans-serif;
+}
+.about_name-pic {
+  padding-left: 10% auto;
+  width: 100vw;
+  margin-left: 15rem;
+  margin-top: 2rem;
+  margin-right: 15rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.about_image {
+  transform: rotate(90deg);
+  border-style: solid;
+  margin-right: 2rem;
+  border-color: var(--light);
+  border-radius: 3rem;
+  height: 10rem;
+  width: 9rem;
+}
+
 .skills {
-  width: 40vw;
-  height: 50vh;
+  padding-left: 10% auto;
+  justify-content: center;
+  max-width: 125rem;
+  margin-left: 15rem;
+  margin-top: 2rem;
+  margin-right: 15rem;
+  display: flex;
+  margin-bottom: 2rem;
+  flex-direction: column;
+}
+
+.skills_title {
+  padding-bottom: 0.5rem;
+  margin-right: 3rem;
+  max-width: 70rem;
+  margin-bottom: 1rem;
+  font-family: "ubuntu", sans-serif;
+  border-bottom: 3px solid red;
+}
+
+.skills_list {
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  width: 38rem;
+  flex-direction: column;
+}
+
+.skills_list-item {
+  color: var(--dark);
+  text-decoration: none;
+  list-style: none;
+  margin: 0 2px;
+  padding: 0;
+}
+
+.projects_container {
+  display: flex;
+  flex-direction: row;
+  max-width: 75vw;
+  border: 2px;
+  justify-content: center;
+  align-items: space-between;
+  border-color: var(--light);
+  position: relative;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.article {
+  width: 30vw;
+}
+
+.footer_links-items {
+  display: inline-block;
+  padding: 5px 5px;
+}
+
+.footer {
+  text-align: center;
+  margin: 20px 0 0;
+  padding: 10px 0;
 }
