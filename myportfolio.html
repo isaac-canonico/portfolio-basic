@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <link rel="stylesheet" type="text/css" href="portfolio.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">  
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -12,6 +13,8 @@
       <h1 class="header_name">Isaac Canonico</h1>
       <h2 class = "header_subtitle"> Full-Stack | Java </h2>
     </div>
+    <i class="fas fa-beer"></i>
+
       <nav class="nav">
           <ul class = "nav_links">
           <li class="nav_links-items"><a href="#header_name"">Home</a></li>
@@ -21,14 +24,15 @@
       </nav>
     </header>
     <body>
+      <div class="wrapper">
            <div class = "Hero_image">
-  <a class = "Hero_image-phrase" href="https://github.com/isaac-canonico"> S E E  M Y  W O R K </a>
+  <a class = "Hero_image-phrase" href="https://github.com/isaac-canonico"> S E E <  / M Y  > W O R K </a>
   </h3>
   </div>
   <h2 class = "about_title">About Me</h2> 
  <div class="about_name-pic">
     <img class="about_image" src="static/IMG_0462.JPG" alt="This is me and Kova"></img>
-    <p class = "about_description">I currently reside in Columbus, Ohio alongside my beautiful wife and puppy. I love to code, design, learn, solve, and relate. </p>
+    <p class = "about_description">I am a full-stack Software developer and UX enthusiast. I live in Columbus, Ohio with my amazing wife, and and furball, Kova. I love to code, design, learn, solve, and relate. Among other things. Let me help your <i>ideas</i> become <i>reality.</i> </p>
   </div>
   <section class="skills">
         <h2 class="skills_title"> Tech I use:</h2> 
@@ -41,39 +45,49 @@
             <li class= "skills_list-item"> SQL •Relational Databases • Source Control / Git </li>
           </ul>
       </section>
-<section class="projects-container">
-    <div class="article">
-        <h3 class="project-title"><a href="https://github.com/charles-m-doan/virtual-pet"> University Clinic Hospital App  </a></h3>
+
+<div class="projects_row">
+<section class="project-column">
+    <article class="article-card">
+        <h3 ><a class="project-title"href="https://github.com/charles-m-doan/virtual-pet"> Virtual Pet App  </a></h3>
         <ul class="project-details_list">
             <li class="project detail">May-June 2019</li>
             <li class="project detail>https://github.com/charles-m-doan/virtual-pet</li>
             <li class="project detail>Eclipse / VS Code / Java 8 / GitHub / TDD / Scrum</li>
+ </article>
+          </section>
  
+          <section class="project-column">
+            <article class="article-card">
+                <h3 ><a class="project-title" href="https://github.com/isaac-canonico/university-clinic-hospital
+                  "> University Clinic Hospital App  </a></h3>
+                <ul class="project-details_list">
+                    <li class="project-detail_date">May-June 2019</li>
+                    <li class="project-detail_link" ></li>
+                    <li class="project detail_tools">Eclipse / VS Code / Java 8 / GitHub / TDD / Scrum</li>
+         </article>
+                  </section>
 
-  
-        </div>
-    <div class="article">
-<h3 class="project-title"><a href="https://github.com/charles-m-doan/virtual-pet"> University Clinic Hospital App  </a></h3>
-<ul class="project-details_list">
-    <li class="project detail"> May-June 2019</li>
-    <li class="project detail> https://github.com/charles-m-doan/virtual-pet </li>
-    <li class="project detail> Eclipse / VS Code / Java 8 / GitHub / TDD / Scrum </li>
-</ul>
-</div>
-</section>
-
-    </article>
-
+                  </div>
   
      <footer class= "footer">
+       <ul class="contact_options"> Say Hi!
+         <li ><a class="contact_link" href:"https://www.linkedin.com/in/isaac-canonico/"> <i class="fab fa-linkedin"></i> LinkedIn </a></li>
+         <li ><a class="contact_link" href:"https://github.com/isaac-canonico"><i class="fab fa-github"></i> GitHub</a></li>
+         <li ><a class="contact_link" href:"https://mailto:canonico.isaac@gmail.com><i &#9993;></i> Email</a></li>
+        </ul>
+
+        <small> &copy Isaac Canonico 2019</small>
+
       <ul class="list">
         <li class="footer_links-items"><a href="#">Home</a></li>
-        <li class="footer_links-items"<a href="#">About</a></li>
+        <li class="footer_links-items"><a href="#">About</a></li>
         <li class="footer_links-items"><a href="#">Work</a></li>
-        <li class="footer_links-items"><a href="#">Say Hi!</a></li>
+      
       </ul>
 
-    <small> &copy Isaac Canonico 2019</small>
+    
     </footer>
+  </div>
   </body>
 </html>
