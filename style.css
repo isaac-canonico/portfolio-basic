@@ -14,12 +14,10 @@ html {
 
   font: sans-serif, Courier;
   font: 20px/1;
-  margin: 2 auto;
 }
 
 body {
   background-color: navajowhite;
-  width: 100vw;
 }
 
 ul {
@@ -44,7 +42,8 @@ a:hover {
   justify-content: space-between;
   padding: 10px 16px;
   width: 100vw;
-  background-color: transparent;
+  position: relative;
+  background-color: navajowhite;
 }
 
 .header_name {
@@ -68,7 +67,7 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60vh;
+  height: 75vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(https://placeimg.com/1000/800/nature);
   position: relative;
@@ -275,7 +274,6 @@ a:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   justify-content: space-evenly;
   padding: 10px 16px;
-  width: 100vw;
   background-color: white;
 }
 .contact_options {
