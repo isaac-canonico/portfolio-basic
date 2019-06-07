@@ -248,6 +248,13 @@ a:hover {
 .project-detail_link:hover {
   color: var(--red);
 }
+.project-detail {
+  margin: 5px;
+  position: center;
+  padding-bottom: 5px;
+  width: 18rem;
+  border-bottom: 3px solid red;
+}
 
 .footer_links-items {
   display: inline-block;
